@@ -17,7 +17,7 @@ class UpgradeViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         UpgradeManager.sharedInstance.priceForUpgrade { (price) in
-            self.priceLabel.text = "$\(price)"
+            self.priceLabel.text = "£\(price)"
             self.upgradeButton.isEnabled = true
             self.restoreButton.isEnabled = true
         }
